@@ -52,12 +52,15 @@ This website showcases a variety of stylish wigs, built with simplicity and eleg
 git clone https://github.com/MarasKrafts/html-dc_strands
 cd d-catalyst-strands
 open index.html
+```
 
-📦 Deployment
+---
+
+## 📦 Deployment
 This project is hosted using GitHub Pages.
 Pushing changes to the main branch automatically updates the site.
 
-✉️Contact
+## ✉️Contact
 📧 goldenprenzy@gmail.com
 📸 Instagram: @_toi_stori
 
