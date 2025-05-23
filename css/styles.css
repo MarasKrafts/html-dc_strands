@@ -1,0 +1,423 @@
+
+/* Universal sellector with variables for easy changes */
+
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color1: #231f20;
+    --primary-color: black;
+    --secondary-color1: #d4af37;
+    --secondary-color2: #ffc300;
+    --tertiary-color: #eaeaea;
+    --tertiary-color2: #eaeaea40;
+    --default-font: 'Times New Roman', Times, serif;
+    --fallback-font: Georgia, 'Times New Roman', Times, serif;
+    --box-shadow1: #ffc30044;
+}
+
+/* To use the 'rem' unit for properties */
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 4px rgba(255,255,255,0.5);
+    background-color: black;
+}
+
+/* Styles for the icon and business name */
+
+#icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28%;
+}
+
+#header-img{
+    width: 4rem;
+    height: 3rem;
+    margin-left: 1.5rem;
+    border-radius: 30px 5px;
+}
+
+h1{
+    color: var(--secondary-color2);
+    font-family: var(--fallback-font);
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#nav-bar{
+    min-width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--secondary-color1);
+    font-weight: bold;
+    font-family: var(--default-font);
+    margin-right: 0.3125rem;
+}
+
+/* Styles for the sign-up button */
+
+#sign-up{
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    width: 3.75rem;
+    background-color: var(--secondary-color2);
+    color: var(--primary-color);
+    font-family: var(--fallback-font);
+}
+
+#first{
+    height: 70vh;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/105201341291637791.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+#first-ish{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    text-align: center;
+}
+
+.pride{
+    color: var(--secondary-color2);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: var(--default-font);
+    margin-bottom: 10px;
+}
+
+#form{
+    width: 100%;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#email{
+    width: 22%;
+    min-width: fit-content;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    font-family: var(--fallback-font);
+    background-color: var(--tertiary-color);
+}
+
+#submit{
+    margin-top: 0.7rem;
+    width: 6%;
+    min-width: fit-content;
+    height: 2rem;
+    font-family: var(--fallback-font);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color1);
+    color: var(--primary-color1);
+}
+
+.border{
+    height: 6px;
+    position: relative;
+    top: 5rem;
+    font-family: var(--fallback-font);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.border i{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border b{
+    font-size: 7px;
+}
+
+#about{
+    max-width: 700px;
+    margin: auto;
+    position: relative;
+    top: 7rem;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px var(--box-shadow1);
+    text-align: center;
+    background-color: transparent;
+    color: var(--tertiary-color);
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ddd;
+    font-style: italic;
+    font-family: var(--fallback-font);
+}
+
+strong{
+    color: var(--secondary-color2);
+}
+
+#catalog{
+    position: relative;
+    top: 8rem;
+    width: 40%;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#catalog figure{
+    margin-top: 30px;
+    max-width: 15%;
+    height: 45%;
+    border-radius: 50%;
+}
+
+figure a, figure img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+figcaption{
+    color: var(--secondary-color2);
+    font-family: var(--fallback-font);
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.vid-sec{
+    width: 40vw;
+    height: 35vh;
+    position: relative;
+    top: 9rem;
+    margin: auto;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    position: relative;
+    top: 11rem;
+    height: 13vh;
+    max-width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--tertiary-color);
+    font-family: var(--fallback-font);
+    background-color: rgba(29, 28, 28, 0.305);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.foot{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact{
+    min-width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact a{
+    text-decoration: none;
+    color: var(--secondary-color2);
+}
+
+footer p{
+    font-family: var(--default-font);
+    letter-spacing: 1px;
+}
+
+/* Styles for phone screen lesser than 1000px */
+
+@media screen and (max-width:1000px){
+    #header{
+        height: 3rem;
+    }
+
+    #icon{
+        width: 40%;
+    }
+
+    #header-img{
+        width: 3em;
+        height: 2rem;
+    }
+
+    h1{
+        font-size: 0.8em;
+        letter-spacing: 1.5px;
+    }
+
+    .nav-link{
+        color: var(--tertiary-color);
+        font-weight: normal;
+        font-size: 0.6rem;
+    }
+
+    #sign-up{
+        width: 3rem;
+        font-size: 0.6rem;
+    }
+
+    #first{
+        height: 45vh;
+        top: 3rem;
+    }
+
+    #first-ish{
+        height: 35%;
+    }
+
+    .pride{
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 7px;
+    }
+
+    #email{
+        width: 45%;
+        height: 1.5rem;
+        border-radius: 5px;
+        font-size: 0.7rem;
+    }
+
+    #submit{
+        margin-top: 0.5rem;
+        height: 1.5rem;
+        width: 15%;
+        padding: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .border{
+        top: 3.5rem;
+        font-size: 0.23rem;
+        font-family: var(--default-font);
+    }
+
+    .border b{
+        font-size: 3px;
+    }
+
+    #about{
+        width: 400px;
+        top: 5rem;
+    }
+
+    #about p{
+        font-size: 0.7rem;
+    }
+
+    #catalog{
+        top: 6rem;
+        width: 70%;
+        height: 25vh;
+    }
+
+    #catalog figure{
+        max-width: 17%;
+        height: 35%;
+    }
+
+    figcaption{
+        font-size: 0.5rem;
+        margin-top: 3px;
+    }
+
+    .vid-sec{
+        width: 70vw;
+        font-size: 1px;
+        top: 7rem;
+    }
+
+    footer{
+        top: 9rem;
+        height: 9vh;
+    }
+
+    #contact{
+        justify-content: flex-end;
+    }
+
+    #contact a{
+        font-size: 0.6rem;
+        margin-right: 8px;
+        text-decoration: underline;
+    }
+
+    footer p{
+        letter-spacing: 0.5px;
+        font-size: 0.6rem;
+    }
+}
