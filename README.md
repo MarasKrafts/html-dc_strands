@@ -56,11 +56,11 @@ open index.html
 
 ---
 
-📦 Deployment
+## 📦 Deployment
 This project is hosted using GitHub Pages.
 Pushing changes to the main branch automatically updates the site.
 
-✉️Contact
+## ✉️Contact
 📧 goldenprenzy@gmail.com
 📸 Instagram: @_toi_stori
 
